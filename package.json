@@ -1,6 +1,6 @@
 {
   "name": "whereami",
-  "description": "Whereami using Vue.js & Node.js...",
+  "description": "Whereami using Node.js...",
   "version": "1.0.0",
   "engines": {
     "node": "6.4.0"
@@ -17,7 +17,6 @@
     "node",
     "heroku",
     "express",
-    "vue",
     "whereami",
     "location",
     "maps"
