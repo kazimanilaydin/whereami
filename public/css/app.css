@@ -1,0 +1,209 @@
+html{font-family: Raleway, Arial;}
+*{margin: 0;padding: 0;}
+.hide{display: none;}
+
+@media screen and (max-width: 480px) { 
+  .logo{width: 64px !important;height: 64px !important;} 
+  #home{border-radius: 0px !important;} 
+  ._header{max-width: 480px !important;border-radius: 0px !important;}
+}
+
+._ease{transition:all .5s ease-in;}
+
+.menu{padding:10px;list-style: none; /*text-align:center;*/ }
+.menu li{padding: 5px; /*float:left;*/ }
+.menu li.list_head{margin: 20px 0;font-weight: bolder;color: #717171;}
+.menu li a{padding:10px;color: #9E9E9E; text-decoration: none; transition: all .1s ease-in;}
+.menu li a:hover{color:#757575;}
+
+#map{width: 100%;height: 100vh;}
+
+.home{margin:0 auto;width: 100%;max-width: 480px;background: #ffffff;border-radius: 8px;margin-top:100px;}
+._header{animation: _pulse_ 2s infinite;font-size: 20px;margin: 18px auto;width: 100%;max-width: 160px;color: white;border: 1px solid #d27e5e;border-radius: 32px;background: #d67e5d;text-shadow: 0px 0px 1px #909090;}
+._header_wrapper{position: absolute;top: 0;left: 0;width: 100%;box-shadow: 0px 0px 1px 1px #c77151;height: 200px;z-index: -1;background: #de8361;}
+.logo{box-shadow: 0 0 0 0 0 0 rgba(212, 126, 94, 0.4);animation: _pulse_ 2s infinite;margin: 60px;width: 80px;height: 80px;padding: 4px;border-radius: 50%;border: 3px solid #d47e5e;background: white;}
+span.logo_text{font-size: 32px;color: #545454;}
+
+/*
+  from: http://cssload.net/en/3d-loaders/
+        > cube conveyor (loading effect)
+*/
+
+.cssload-conveyor{
+  position:relative;
+  display:block;
+  margin: 150px auto;
+  width:165px;
+}
+  
+.cssload-conveyor, .cssload-conveyor * {
+  box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.cssload-conveyor span {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  background: rgb(222,130,81);
+  transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+  transform-perspective: 150px;
+    -o-transform-perspective: 150px;
+    -ms-transform-perspective: 150px;
+    -webkit-transform-perspective: 150px;
+    -moz-transform-perspective: 150px;
+}
+
+.cssload-conveyor span:nth-child(1) {
+  animation: cssload-cuve 0.9s 0.445s infinite;
+    -o-animation: cssload-cuve 0.9s 0.445s infinite;
+    -ms-animation: cssload-cuve 0.9s 0.445s infinite;
+    -webkit-animation: cssload-cuve 0.9s 0.445s infinite;
+    -moz-animation: cssload-cuve 0.9s 0.445s infinite;
+}
+.cssload-conveyor span:nth-child(2) {
+  animation: cssload-cuve 0.9s 0.9s infinite;
+    -o-animation: cssload-cuve 0.9s 0.9s infinite;
+    -ms-animation: cssload-cuve 0.9s 0.9s infinite;
+    -webkit-animation: cssload-cuve 0.9s 0.9s infinite;
+    -moz-animation: cssload-cuve 0.9s 0.9s infinite;
+}
+.cssload-conveyor span:nth-child(3) {
+  animation: cssload-cuve 0.9s 1.345s infinite;
+    -o-animation: cssload-cuve 0.9s 1.345s infinite;
+    -ms-animation: cssload-cuve 0.9s 1.345s infinite;
+    -webkit-animation: cssload-cuve 0.9s 1.345s infinite;
+    -moz-animation: cssload-cuve 0.9s 1.345s infinite;
+}
+.cssload-conveyor span:nth-child(4) {
+  animation: cssload-cuve 0.9s 1.8s infinite;
+    -o-animation: cssload-cuve 0.9s 1.8s infinite;
+    -ms-animation: cssload-cuve 0.9s 1.8s infinite;
+    -webkit-animation: cssload-cuve 0.9s 1.8s infinite;
+    -moz-animation: cssload-cuve 0.9s 1.8s infinite;
+}
+.cssload-conveyor span:nth-child(5) {
+  animation: cssload-cuve 0.9s 2.245s infinite;
+    -o-animation: cssload-cuve 0.9s 2.245s infinite;
+    -ms-animation: cssload-cuve 0.9s 2.245s infinite;
+    -webkit-animation: cssload-cuve 0.9s 2.245s infinite;
+    -moz-animation: cssload-cuve 0.9s 2.245s infinite;
+}
+
+@keyframes cssload-cuve {
+  0% {
+    transform: rotateY(-90deg) perspective(75px);
+    background: rgb(214,125,93);
+  }
+  50% {
+    transform: rotateY(0deg);
+    background: rgb(222,130,81);
+  }
+  100% {
+    transform: rotateY(90deg) perspective(75px);
+    transform-origin: 100% 50%;
+    background: rgba(214,125,93,0.99);
+  }
+}
+
+@-o-keyframes cssload-cuve {
+  0% {
+    -o-transform: rotateY(-90deg) perspective(75px);
+    background: rgb(214,125,93);
+  }
+  50% {
+    -o-transform: rotateY(0deg);
+    background: rgb(222,130,81);
+  }
+  100% {
+    -o-transform: rotateY(90deg) perspective(75px);
+    -o-transform-origin: 100% 50%;
+    background: rgba(214,125,93,0.99);
+  }
+}
+
+@-ms-keyframes cssload-cuve {
+  0% {
+    -ms-transform: rotateY(-90deg) perspective(75px);
+    background: rgb(214,125,93);
+  }
+  50% {
+    -ms-transform: rotateY(0deg);
+    background: rgb(222,130,81);
+  }
+  100% {
+    -ms-transform: rotateY(90deg) perspective(75px);
+    -ms-transform-origin: 100% 50%;
+    background: rgba(214,125,93,0.99);
+  }
+}
+
+@-webkit-keyframes cssload-cuve {
+  0% {
+    -webkit-transform: rotateY(-90deg) perspective(75px);
+    background: rgb(214,125,93);
+  }
+  50% {
+    -webkit-transform: rotateY(0deg);
+    background: rgb(222,130,81);
+  }
+  100% {
+    -webkit-transform: rotateY(90deg) perspective(75px);
+    -webkit-transform-origin: 100% 50%;
+    background: rgba(214,125,93,0.99);
+  }
+}
+
+@-moz-keyframes cssload-cuve {
+  0% {
+    -moz-transform: rotateY(-90deg) perspective(75px);
+    background: rgb(214,125,93);
+  }
+  50% {
+    -moz-transform: rotateY(0deg);
+    background: rgb(222,130,81);
+  }
+  100% {
+    -moz-transform: rotateY(90deg) perspective(75px);
+    -moz-transform-origin: 100% 50%;
+    background: rgba(214,125,93,0.99);
+  }
+}
+
+/*
+  from: https://codepen.io/olam/pen/zcqea
+        > pulse effect
+*/
+
+@-webkit-keyframes _pulse_ {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(212, 126, 94, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(212, 126, 94, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(212, 126, 94, 0);
+  }
+}
+@keyframes _pulse_ {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(212, 126, 94, 0.4);
+    box-shadow: 0 0 0 0 rgba(212, 126, 94, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(212, 126, 94, 0);
+      box-shadow: 0 0 0 20px rgba(212, 126, 94, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(212, 126, 94, 0);
+      box-shadow: 0 0 0 0 rgba(212, 126, 94, 0);
+  }
+}

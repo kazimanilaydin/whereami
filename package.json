@@ -1,0 +1,32 @@
+{
+  "name": "whereami",
+  "description": "Whereami using Vue.js & Node.js...",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.4.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "vue",
+    "whereami",
+    "location",
+    "maps"
+  ],
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "author": "kazimanilaydin"
+}
