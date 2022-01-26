@@ -1,16 +1,16 @@
 {
   "name": "whereami",
-  "description": "Whereami using Node.js...",
+  "description": "Whereami for Location Detection with Leaflet by OpenStreetMaps",
   "version": "1.0.0",
   "engines": {
-    "node": "6.4.0"
+    "node": ">14.0"
   },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "ejs": "2.4.1",
+    "ejs": "2.5.5",
     "express": "4.13.3"
   },
   "keywords": [
