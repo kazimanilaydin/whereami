@@ -4,8 +4,8 @@ Node.js app using [Express 4](http://expressjs.com/).
 
 ## Screenshot
 
-![Screenshot1](https://github.com/kazimanilaydin/whereami/blob/main/screenshot1.png?raw=true)
-![Screenshot2](https://github.com/kazimanilaydin/whereami/blob/main/screenshot2.png?raw=true)
+![Screenshot1](https://github.com/kazimanilaydin/whereami/blob/master/screenshot1.png?raw=true)
+![Screenshot2](https://github.com/kazimanilaydin/whereami/blob/master/screenshot2.png?raw=true)
 
 ## Running Locally
 
